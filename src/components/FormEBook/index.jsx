@@ -218,26 +218,33 @@ export default function FormEBook () {
         <ModalContent
           bgColor={globais.darkPrimaryColor}
           color="white"
+          border="3px solid #4ADE80"
         >
-          <ModalHeader textAlign="center">
-            TRACTIAN - Agradecimento
-          </ModalHeader>
-          <ModalBody>
-            <Text textAlign="center">
-              Obrigado {nameClient}, os seus E-Books serão enviados por e-mail!
-            </Text>
-          </ModalBody>
-          <ModalFooter justifyContent="center">
-            <Button
-              bgColor="red.600"
-              _hover={{
-                bgColor: 'red.300'
-              }}
-              onClick={onCloseModal}
-            >
-              Fechar
-            </Button>
-          </ModalFooter>
+          <Box
+            border="1px solid #4ADE80"
+            borderRadius="3px"
+            margin="5px"
+          >
+            <ModalHeader textAlign="center">
+              TRACTIAN - Agradecimento
+            </ModalHeader>
+            <ModalBody>
+              <Text textAlign="center">
+                Obrigado {nameClient}, os seus E-Books serão enviados por e-mail!
+              </Text>
+            </ModalBody>
+            <ModalFooter justifyContent="center">
+              <Button
+                bgColor="red.600"
+                _hover={{
+                  bgColor: 'red.300'
+                }}
+                onClick={onCloseModal}
+              >
+                Fechar
+              </Button>
+            </ModalFooter>
+          </Box>
         </ModalContent>
       </Modal>
     </Flex>
