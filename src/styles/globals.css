@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.bgLeft {
+  background: url('/assets/bgImage.png');
+  background-repeat: no-repeat;
+}
+
+.Montserrat {
+  font-family: Montserrat;
+  font-weight: 900;
+}
+
+.textSmall {
+  font-variant: small-caps;
+}
+
+.shadowBoxForm {
+  box-shadow: 8px 8px #4ADE80;
+}
+
+#animationMenu:hover {
+  animation: slideMenu 0.8s infinite;
+}
+
+@keyframes slideMenu {
+  0%    { height: 25px; border-bottom: 3px solid #7e98de; }
+  50%   { height: 40px; border-bottom: 3px solid #4ADE80; }
+  100%  { height: 25px; border-bottom: 3px solid #7e98de; }
+}
+
+/* Celulares (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .bgLeft {
+    background-size: 100vw 100%;
+  }
+}
+
+/* Tablets (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bgLeft {
+    background-size: 80vw 100vh;
+  }
+}
+
+/* Desktop (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bgLeft {
+    background-size: 57vw 100vh;
+  }
+}
